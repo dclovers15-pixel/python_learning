@@ -33,5 +33,4 @@ def main ():
         
 def recommend(game):
     print(f"i recommend you play {game}")
-
 main()
