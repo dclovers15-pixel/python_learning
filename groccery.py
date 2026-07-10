@@ -30,3 +30,4 @@ for item in cart:
          if item == fruit["name"]:
             total_price += int(fruit["frice"])
 print ("cant uderstand you")
+print (input ("ask yourself"))
