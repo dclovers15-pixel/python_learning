@@ -17,3 +17,4 @@ def get_artworks(query, limit):
         return [artwork["title"] for artwork in content["data"]]
     except requests.HTTPError:
         return []
+main()
