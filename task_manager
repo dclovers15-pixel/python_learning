@@ -1,0 +1,25 @@
+while True:
+   tasks_input = input("Enter your tasks (comma-separated): ").strip()
+   if not tasks_input:
+      print("enter at least one task")
+      continue
+   
+   #a list comprahension is used to create a list of tasks by splitting the input string on commas, stripping 
+   # whitespace from each task, and filtering out any empty strings.
+   tasks = [t.strip() for t in tasks_input.split(",") if t.strip()]
+   if not tasks:
+      print("enter at least one task")
+      continue
+
+   try:
+      time = int(input("Enter how many minutes you have: "))
+   except ValueError:
+      print("please enter a valid integer for minutes")
+      continue
+  #if and else in one line is a shortcut to choose between two values based on a condition. In this case, 
+  # it checks if the list of tasks is not empty. If it is not empty, it calculates the time per task by dividing the total time by the number of tasks and rounding it to the nearest integer.
+  # If the list of tasks is empty, it assigns 0 to timepertask to avoid division by zero.
+   timepertask = round(time / len(tasks)) if tasks else 0
+   for task in tasks:
+      print(f"{task}: {timepertask} minutes")
+   break

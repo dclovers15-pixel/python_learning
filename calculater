@@ -1,0 +1,30 @@
+def jls_extract_def():
+    
+    return 
+
+
+def main():
+    while True:
+        expression = input("Enter ur sum : ")
+        parts = expression.split()
+        a = int(parts[0])
+        operation = parts[1]
+        b = int(parts[2])
+
+        print("Your number is", calculater(a, b, operation))
+
+
+def calculater(a, b, operation):
+    if operation == "+":
+        return a + b
+    elif operation == "-":
+        return a - b
+    elif operation == "*":
+        return a * b
+    elif operation == "/":
+        return a / b
+    else:
+        raise ValueError("Invalid operation. Please enter a valid operation.")
+
+
+main()

@@ -17,4 +17,7 @@ def get_artworks(query, limit):
         return [artwork["title"] for artwork in content["data"]]
     except requests.HTTPError:
         return []
+print("Error: Unable to fetch artworks from the API.")
+
+
 main()

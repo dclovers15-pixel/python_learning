@@ -1,0 +1,63 @@
+from random import randint
+import time
+import os
+
+os.system("cls" if os.name == "nt" else "clear")
+
+
+def type(text, speed=0.04):
+    for letter in text:
+        print(letter, end="", flush=True)
+        time.sleep(speed)
+    print()
+
+
+# Big title
+print(r"""
+
+ █████╗ ██╗███████╗██╗  ██╗ █████╗
+██╔══██╗██║██╔════╝██║  ██║██╔══██╗
+███████║██║███████╗███████║███████║
+██╔══██║██║╚════██║██╔══██║██╔══██║
+██║  ██║██║███████║██║  ██║██║  ██║
+╚═╝  ╚═╝╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝
+
+💗✨ HAPPY BIRTHDAY ✨💗
+
+""")
+
+time.sleep(1.5)
+
+# Heart animation
+for _ in range(40):
+    print(" " * randint(0, 55) + "💖")
+    time.sleep(0.05)
+
+print()
+
+type("🌸 Happy Birthday, Aisha! 🌸")
+time.sleep(0.7)
+type("I hope today brings you lots of smiles. 💗")
+time.sleep(0.7)
+type("Thank you for being such a lovely person. ✨")
+time.sleep(0.7)
+type("May Allah bless you with happiness and peace. 🤲")
+time.sleep(0.7)
+type("Have an amazing day! 🎂")
+
+print()
+
+print(r"""
+          💗💗💗       💗💗💗
+      💗💗💗💗💗💗   💗💗💗💗💗💗
+    💗💗💗💗💗💗💗💗💗💗💗💗💗💗
+     💗💗💗💗💗💗💗💗💗💗💗💗💗
+       💗💗💗💗💗💗💗💗💗💗💗
+         💗💗💗💗💗💗💗💗💗
+           💗💗💗💗💗💗💗
+             💗💗💗💗💗
+               💗💗💗
+                 💗
+""")
+
+type("💖 Happy Birthday, Aisha. 💖")

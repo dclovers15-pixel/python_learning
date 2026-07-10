@@ -1,0 +1,93 @@
+while True:
+    try:
+        age = int(input("enter ur age: "))
+    except ValueError:
+        print("please enter a valid integer for age")
+        continue
+    if age < 12:
+        print(f"ur age is {age} so ur ticket price is 5$")
+    elif age < 18:
+        print(f"ur age is {age} so ur ticket price is 8$")
+    else:
+        print(f"ur age is {age} so ur ticket price is 12$")
+    break
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+age = int(input("enter ur age: "))
+years_left = 18 - age
+if age >=18:
+    print("u can vote")
+else:
+    print (f"u can't vote, u have {years_left}years left ")
+
+
+
+print (10==10)
+print (10!=20)
+print (20>10)
+print (20<10)
+print (10>=10)  
+print (10<=10)
+print ("=============================================")
+
+
+
+
+name = input("Enter your name: ").strip()
+destination = input("Enter your destination: ").strip()
+days = int(input("How many days will you be traveling? ").strip())
+print("==========================================")
+print("         TRAVEL PROFILE.                   ")
+print("==========================================")
+print (f"traveler : {name}")
+print (f"destination : {destination}")
+print (f"days : {days}")
+print(f"Note:{name} will be spending {days} days in {destination}. Bon voyage!")
+
+
+
+
+
+
+
+
+
+
+
+name = input ("wat is ur name :").strip()
+greeting = "hello welcome"
+print (f"{greeting}, {name}")
+age = int(input ("enter ur age:"))
+print (f"{greeting}, {name.capitalize()}, you are {age} years old")
+number1 = int(input ("enter ur number1:"))
+number2 = int(input ("enter ur number2:"))
+operater = input ("enter ur operater:")
+if operater == "+":
+    print (number1 + number2)
+elif operater == "-":
+    print (number1 - number2)
+elif operater == "*":
+    print (number1 * number2)
+elif operater == "/":   
+    print (number1 // number2)
+else:
+    print ("invalid operater")
