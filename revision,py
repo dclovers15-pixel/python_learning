@@ -1,3 +1,401 @@
+name = (input ("wat is ur name: "))
+hours = int(input ("how many hours did u work: "))
+rate = float(input ("enter ur hourly rate: "))
+gross_pay = hours * rate 
+tax_percentage = 22/100
+tax_pay =round(tax_percentage * gross_pay)
+net = round(gross_pay - tax_pay)
+print(f"employee: {name}")
+print(f"hours; {hours}")
+print(f"rate: ${rate}/hr")
+print(f"gross pay: {gross_pay}")
+print(f"tax 22%: {tax_pay}")
+print(f"net pay; {net}")
+
+
+
+
+
+
+
+
+
+
+
+Products = [
+    {"name": "Laptop", "price": 999},
+    {"name": "Phone", "price": 699},
+    {"name": "Headphones", "price": 149}
+]
+product = input (' wat product do u want? ').strip().capitalize()
+for p in products:
+    if p["name"] == product :
+        print(f"search : {product}")
+        print(f"{p['name']}: {p['price']}")
+        break
+else :
+ print (f"search : {product}")
+ print("not found. ")
+
+
+
+students = [
+    {"name": "Ahmed", "score": 85},
+    {"name": "Bile", "score": 45},
+    {"name": "Nimo", "score": 67}
+]
+for s in students :
+    if s["score"] <= 60 :
+     print(f"{s["name"]}: {s['score']} - fail")
+    else :
+        print(f"{s['name']}: {s['score']} - pass")
+
+
+
+
+items = []
+while True :
+    item = input("wat is the new item? ")
+    items.append(item)
+    if item == "done" :
+        break
+
+
+
+for number, item in enumerate(items, start=1) :
+   print(f"{number}. {item}")
+print(f"total: {len(items)}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+contacts = { 
+            "Ahmed" : 552851086,
+            "Abdi"  : 7597398688,
+            "Salma" : 97654334567
+            }
+name = input("wat is the name of the person u r looking? ")    
+if name in contacts :
+ print(f"Name : {name}  number : {contacts[name]}")
+else:
+    print("not found")
+
+
+
+
+student = {
+         "Name" : "Ibrahim",
+           "Age" : "19",
+           "City" : "Ankara"
+        }
+student["email"] = "ibrahimali@gmail.com"
+student["City"] = "stanbul"
+print (f"Name ; {student["Name"]}")
+print (f"Age : {student["Age"]}")
+print(f"city : {student["City"]}")
+
+
+
+friends = ["oslo", "nairobi", 'ankara', "oslo","nairobi", "ankara"] 
+print(f"highest :{max(friends)}")
+print(f"last :{min(friends)}")
+print(set(friends))
+
+
+
+grade = [1, 2, 3, 4, 5, 6, 7, 8,]
+grade.append("990")
+for i in grade:
+   print (i)
+
+
+
+def subtotal (price, qty,):
+    return  int (price) * int ( qty )
+   
+def tax (amount):
+    return amount * 0.10
+    
+def print_receipt(item, price, qty):
+    sub = subtotal(price, qty)
+    tax_amount = tax(sub)
+    total = sub + tax_amount
+
+    print (f"=========================")
+    print (f"          RECIEPT.        ")
+    print (f"===========================")
+    print (f"item : {item}")
+    print (f"subtotal : ${sub}")
+    print (f"tax: {tax_amount}")
+    print(f"qty : {qty}")
+    print(f"tota : {total}")
+
+
+print_receipt("pizza", "10", "3")
+
+
+
+
+def greeting (name, message):
+     print("========================")
+     print(f"to: {name}")
+     print(f"message {message}")
+     print(f"========================")
+
+
+greeting("ahmed", "happy birthday")
+greeting("hodan", "congratulation")
+
+def delivery_fee(order_total):
+    if order_total > 50:
+        return 0
+    else :
+        return 10
+orders = [35, 60, 58]
+for order in orders : 
+    fee = delivery_fee (order)
+    total = order + fee 
+    print (f"order: {order} - fee: {fee} total: {total}")
+
+
+def is_adult (age):
+    if age >= 18:
+        return True 
+    else :
+        return False 
+print (F"12 : {is_adult(12)}")
+print (f"18 : {is_adult (18)}")
+
+
+
+
+
+def area (length, width):
+     return int (length)* int(width)
+print(f"room 1 : {area("5", "4")}")
+print(f"room 2 : {area("10", "3")}")
+
+
+
+def ticket_price(age):
+
+  if age < 12 :
+      return 5
+  elif age < 18:
+      return 8
+  else :
+      return 12
+print (f"age 10 : {ticket_price(10)}")
+print (f"age 15 : {ticket_price(15)}")
+print (f"age 25 : {ticket_price(25)}")
+
+
+
+def double(number):
+    return number * 2
+number = int(input ("choose a number "))
+result = double(number)
+print (F"{result}")
+
+
+
+
+
+def full_name (first, last):
+    print (f"{first.upper()}, {last.upper()}")
+full_name("ahmed", "yusuf")
+full_name("hodan", "bile")
+full_name("nimo", "farah")
+
+
+name = input (" wat is ur name? ")
+age = input (" wat is ur age? ")
+bag_weight = input (" wat is ur bag weight? ")
+if int(age) < 18 or int(bag_weight) > 23 :
+    print (" u r not eligable ")
+
+else :
+    print(f"name : {name}")
+    print(f"age {age}")
+    print(f"bag weight : {bag_weight}")
+    print("===========================")
+    print("     BOARDING PASS        ")
+    print("===========================")
+    print(f"passenger: {(name).upper}")
+    print(f"status : Checked in")
+
+
+i = int (input ("choose a number? "))
+for (i) in range (i):
+    print("*", end= " ")
+
+
+
+day = input (" wat day is today? " ).strip()
+price = int(input (" wat is the price "))
+days = ["monday", "friday"]
+discount1 = price * 0.8
+discount2 = price * 0.9
+if day in days  :
+    print(f"day : {day}")
+    print(f"price : {price}$")
+    print("discount : 20%")
+    print(f"final : {discount1}")
+elif day == "wednesday" :
+    print(f"day : {day}")
+    print(f"price : {price}$")
+    print("discount : 10%")
+    print(f"final : {discount2}$")
+else :
+    print(f"day : {day}")
+    print(f"price : {price}$")
+    print("discount : 0%")
+    print(f"final: {price}$")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+number = int ( input ( "enter a number? "))
+if number % 2 == 0 :
+    print (f"Number : {number}")
+    print(f'{number} is even')
+else:
+    print (f"Number : {number}")
+    print(f'{number} is odd ')
+evens = []
+for i in range (2, 11, 2):
+       evens.append(str(i))
+print (f"even numbers:", "|".join (evens) )
+
+
+
+
+score = int (input ("wat is ur score ? "))
+if score >= 90 :
+    print (f" ur grade is 'A' since u got {score}")
+elif score >= 80 : 
+    print (f" ur grade is 'B' since u got {score}")
+elif score >= 70 :
+     print (f" ur grade is 'C' since u got {score}")
+elif score >= 60 :
+    print (f" ur grade is 'D' since u got {score}")
+else :
+    print (f" ur grade is 'F' since u got {score}")
+
+
+
+
+while True:
+   try :
+      speed_limit = int (input ("wat is ur speed limit? "))
+      speed = int (input ("wat is ur speed? "))
+
+
+      if speed != speed_limit :
+         over = speed - speed_limit
+         fine = (over//10) * 50
+         print (f"ur speed limit is {speed_limit} and ur speed is {speed} and ur over by {over} so u r fined by {fine}")
+      else :
+         print (f"u r not fined and u r save")
+   except ValueError :
+       print("plz enter an int")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def fees (hours):
+    if hours <=  0 :
+       return 0
+    if hours == 1:
+       return 5
+    if hours == 2:
+       return 5
+    else:
+        return 20
+
+
+
+def main () :
+    while True :
+        try :
+           hours = int(input("how many hours r u parked? "))
+    
+           fee = fees (hours)
+           print (f"u have been parked for {hours} hours and ur fees is {fee} ")
+        except ValueError :
+            print ("plz enter a a valid number")
+    
+        
+if __name__ == "__main__":
+    main()
+
+
+
+
+
+
+
+
+
+
+
 while True:
     try:
         age = int(input("enter ur age: "))
@@ -11,24 +409,6 @@ while True:
     else:
         print(f"ur age is {age} so ur ticket price is 12$")
     break
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
